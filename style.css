@@ -1,10 +1,10 @@
 :root {
-    --dark-1: hsl(150, 5%, 10%);
-    --dark-2: hsl(150, 10%, 20%);
-    --dark-3: hsl(150, 15%, 30%);
-    --light-1: hsl(150, 45%, 90%);
-    --light-2: hsl(150, 40%, 80%);
-    --light-3: hsl(150, 35%, 70%);
+    --dark-1: hsl(120, 5%, 10%);
+    --dark-2: hsl(120, 10%, 20%);
+    --dark-3: hsl(120, 15%, 30%);
+    --light-1: hsl(120, 45%, 90%);
+    --light-2: hsl(120, 40%, 80%);
+    --light-3: hsl(120, 35%, 70%);
 }
 
 .image-link {
@@ -19,22 +19,12 @@
 
 #header {
     display: grid;
-    grid: auto / auto auto auto auto;
+    grid: auto / auto auto auto auto auto;
 }
 
-footer,
-.small-link {
-    font-size: 0.75rem;
-}
 
 h1 {
     font-size: 3rem;
-}
-
-#nav {
-    display: grid;
-    grid: auto / 1fr 1fr 1fr 1fr 1fr 1fr;
-    background: transparent;
 }
 
 .content {
@@ -45,11 +35,30 @@ p {
     text-align: left;
 }
 
-p > a, footer > a {
+p>a,
+footer>a {
     padding: 0;
+}
+
+footer>* {
+    font-size: 0.75rem;
 }
 
 #header-background {
     display: flex;
     background-color: var(--dark-2);
+}
+
+span,
+time, em, strong {
+    padding: 0;
+    font-size: inherit;
+}
+
+em {
+    font-weight: bold;
+}
+
+.big-link {
+    font-size: 2rem;
 }
