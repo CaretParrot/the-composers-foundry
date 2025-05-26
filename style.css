@@ -22,11 +22,6 @@
     grid: auto / auto auto auto auto auto;
 }
 
-
-h1 {
-    font-size: 3rem;
-}
-
 .content {
     background-color: var(--dark-2);
 }
