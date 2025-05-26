@@ -62,3 +62,8 @@ em {
 .big-link {
     font-size: 2rem;
 }
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
