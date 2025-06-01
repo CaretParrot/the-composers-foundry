@@ -62,3 +62,8 @@ em {
     display: flex;
     flex-flow: row wrap;
 }
+
+.video-list {
+    display: grid;
+    grid: auto / 1fr 1fr 1fr;
+}
