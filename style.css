@@ -67,3 +67,16 @@ em {
     display: grid;
     grid: auto / 1fr 1fr 1fr;
 }
+
+ol, ul, li {
+    text-align: left;
+}
+
+li {
+    padding: 0;
+    margin-left: 1rem;
+}
+
+li > a {
+    padding: 0;
+}
