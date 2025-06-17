@@ -7,6 +7,12 @@
     --light-3: hsl(120, 35%, 70%);
 }
 
+body,
+div {
+    grid: auto / auto;margin: auto;
+        width: fit-content;
+}
+
 .image-link {
     height: 6rem;
     padding: 0;
@@ -21,7 +27,6 @@
     display: grid;
     grid: auto / auto auto auto auto auto;
 }
-
 
 p,
 ol,
@@ -69,11 +74,6 @@ em {
 
 li {
     margin-left: 1rem;
-}
-
-.content,
-.footer {
-    grid: auto / auto;
 }
 
 .footer {
