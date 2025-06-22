@@ -7,10 +7,11 @@
     --light-3: hsl(120, 35%, 70%);
 }
 
-body,
+html, body
 div {
-    grid: auto / auto;margin: auto;
-        width: fit-content;
+    grid: auto / auto;
+    margin: auto;
+    width: fit-content;
 }
 
 .image-link {
