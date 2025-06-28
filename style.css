@@ -7,6 +7,12 @@
     --light-3: hsl(120, 35%, 70%);
 }
 
+html {
+    margin: auto;
+    min-width: 80%;
+    width: 80%;
+}
+
 .image-link {
     height: 6rem;
     padding: 0;
@@ -19,7 +25,11 @@
 
 #header {
     display: grid;
-    grid: auto / auto auto auto auto auto;
+    grid: auto / auto auto auto auto;
+}
+
+h1 {
+    font-size: 3rem;
 }
 
 p,
@@ -76,6 +86,13 @@ li {
     grid-gap: 0;
 }
 
-.content {
-    grid: auto / 1fr;
+#header-background {
+    grid-area: 1 / 1 / 1 / 5;
+    margin: auto;
+}
+
+@media (hover: none) {
+    html {
+        width: 100%;
+    }
 }
