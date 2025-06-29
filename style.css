@@ -24,8 +24,11 @@ html {
 }
 
 #header {
-    display: grid;
-    grid: auto / auto auto auto auto;
+    grid: auto / 1fr 1fr 1fr 1fr;
+}
+
+div {
+    background-color: light-dark(var(--light-2), var(--dark-2));
 }
 
 h1 {
@@ -52,7 +55,6 @@ li {
 
 #header-background {
     grid: auto / auto auto;
-    background-color: light-dark(var(--light-2), var(--dark-2));
 }
 
 span,
@@ -86,13 +88,12 @@ li {
     grid-gap: 0;
 }
 
-#header-background {
-    grid-area: 1 / 1 / 1 / 5;
-    margin: auto;
-}
-
 @media (hover: none) {
     html {
         width: 100%;
     }
+}
+
+#hidden {
+    opacity: 0;
 }
