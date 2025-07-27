@@ -29,8 +29,7 @@ div {
 }
 
 .header {
-    grid: auto / auto auto auto auto;
-    grid-area: 2 / 1 / 4 / 2;
+    grid: auto / 1fr 1fr 1fr 1fr;
 }
 
 h1 {
