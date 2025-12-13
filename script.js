@@ -1,10 +1,11 @@
-id.setupTree();
+
+let courseSelect = /** @type {HTMLSelectElement} */ (document.getElementById("courseSelect"));
+let year = /** @type {HTMLSpanElement} */ (document.getElementById("year"));
 
 window.onload = function () {
-    id.setupTree();
-    id.year.innerHTML = new Date().getFullYear();
+    year.innerHTML = String(new Date().getFullYear());
 }
 
-id.courseSelect.onchange = function () {
-    window.location = id.courseSelect.value;
+courseSelect.onchange = function () {
+    window.location = /** @type {string & Location} */ (courseSelect.value);
 }
