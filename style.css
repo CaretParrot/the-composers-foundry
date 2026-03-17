@@ -1,6 +1,5 @@
 :root {
-    color-scheme: light dark;
-    --hue-degree: 120;
+    --hue: 120;
 }
 
 html {
@@ -11,7 +10,6 @@ html {
 
 div {
     grid: auto / 1fr;
-    background-color: var(--element);
 }
 
 .image-link {
@@ -20,12 +18,17 @@ div {
 }
 
 #logo {
-    height: 6rem;
+    width: 100%;
+    height: 100%;
     padding: 0;
 }
 
+select {
+    background-color: var(--element);
+}
+
 .header {
-    grid: auto / 1fr 1fr 1fr 1fr;
+    grid: auto / 1fr 1fr 1fr;
 }
 
 h1 {
@@ -40,6 +43,7 @@ p>a,
 .footer>* {
     font-size: 0.75rem;
     background-color: transparent;
+    border: none;
 }
 
 #header-background {
